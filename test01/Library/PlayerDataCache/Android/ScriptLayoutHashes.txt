@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-D:/유니티/교육용 빌드/TT.apk
+D:/gits2/test01/test2.apk
 SceneListBegin?
 Assets/Scenes/SampleScene.unity
 SceneListEnd?
