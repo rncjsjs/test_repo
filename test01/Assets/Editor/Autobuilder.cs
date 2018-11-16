@@ -9,7 +9,7 @@ public class Autobuilder : MonoBehaviour
 
     public static void BuildGame()
     {
-
+        Console.Write("hello");
         var scenes = new string[] { "Assets/Scenes/SampleScene.unity" };
         var flags = BuildOptions.Development;
         Debug.Log("start");
