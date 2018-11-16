@@ -4,10 +4,10 @@ using System;
 using UnityEngine;
 using UnityEditor;
 
-public class Autobuilder : MonoBehaviour
+class Autobuilder
 {
 
-    public static void BuildGame()
+    static void BuildGame()
     {
         Console.Write("###hello");
         var scenes = new string[] { "Assets/Scenes/SampleScene.unity" };
