@@ -11,7 +11,7 @@ public class Autobuilder : MonoBehaviour
     {
         Console.Write("###hello");
         var scenes = new string[] { "Assets/Scenes/SampleScene.unity" };
-        var flags = BuildOptions.None;
+        var flags = BuildOptions.Development;
         Debug.Log("###start");
         BuildPipeline.BuildPlayer(scenes, "test2.apk", BuildTarget.Android, flags);
         Debug.Log("###end");
