@@ -10,7 +10,7 @@ public class Autobuilder : MonoBehaviour
     public static void BuildGame()
     {
         Console.Write("###hello");
-        var scenes = new string[] { "Assets/Scenes/SampleScene.unity" }; //test
+        var scenes = new string[] { "Assets/Scenes/SampleScene.unity" }; 
         var flags = BuildOptions.Development;
         Debug.Log("###start");
         BuildPipeline.BuildPlayer(scenes, "D:/젠킨스/workspace/TEST02/test2.apk", BuildTarget.Android, flags);
