@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\test01",
+    "\\test01\\Assets",
+    "\\test01\\Assets\\Editor",
+    "\\test01\\Library",
+    "\\test01\\Packages",
+    "\\test01\\ProjectSettings"
+  ],
+  "SelectedNode": "\\test01\\Assets\\Editor\\Autobuilder.cs",
+  "PreviewInSolutionExplorer": false
+}
