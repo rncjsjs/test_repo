@@ -1,12 +1,4 @@
 # Android
-- task: Gradle@2
-  inputs:
-    gradleWrapperFile: 'gradlew'
-    tasks: 'build'
-    publishJUnitResults: true
-    testResultsFiles: '**/TEST-*.xml'
-    javaHomeOption: 'JDKVersion'
-    sonarQubeRunAnalysis: false
 # Build your Android project with Gradle.
 # Add steps that test, sign, and distribute the APK, save build artifacts, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/android
@@ -21,9 +13,9 @@ pool:
 steps:
 - task: Gradle@2
   inputs:
-    workingDirectory: 'Test01'
     gradleWrapperFile: 'Test01/gradlew'
-    gradleOptions: '-Xmx3072m'
-    publishJUnitResults: false
+    tasks: 'build'
+    publishJUnitResults: true
     testResultsFiles: '**/TEST-*.xml'
-    tasks: 'assembleDebug'
+    javaHomeOption: 'JDKVersion'
+    sonarQubeRunAnalysis: false
