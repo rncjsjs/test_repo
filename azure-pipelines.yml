@@ -13,8 +13,8 @@ pool:
 steps:
 - task: Gradle@2
   inputs:
-    workingDirectory: 'MyApp'
-    gradleWrapperFile: 'MyApp/gradlew'
+    workingDirectory: 'C:\Users\Silva\Desktop\GitTest\TEST01'
+    gradleWrapperFile: 'C:\Users\Silva\Desktop\GitTest\TEST01\test01\gradle'
     gradleOptions: '-Xmx3072m'
     publishJUnitResults: false
     testResultsFiles: '**/TEST-*.xml'
