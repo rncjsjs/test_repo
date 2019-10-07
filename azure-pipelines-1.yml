@@ -12,7 +12,7 @@ pool:
 steps:
 - task: Gradle@2
   inputs:
-    workingDirectory: 'Test01/Asset/Editor/Autobuilder.cs'
+    workingDirectory: 'Test01/Asset/Editor'
     gradleWrapperFile: 'Test01/gradlew'
     gradleOptions: '-Xmx3072m'
     publishJUnitResults: false
