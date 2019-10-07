@@ -18,3 +18,23 @@ steps:
     publishJUnitResults: false
     testResultsFiles: '**/TEST-*.xml'
     tasks: 'assembleDebug'
+
+- task: UnityBuildTask@3
+  inputs:
+    buildTarget: 'Android'
+    unityProjectPath: 'test01'
+    outputPath: 'test01'
+    outputFileName: '**.apk'
+
+    - task: CmdLine@2
+  inputs:
+    script: |
+      $project = “test01”
+      $arguments = @(
+      “-quit”,
+      “-batchmode”,
+      “-projectPath $project”,
+      “-executeMethod Autobuild.BuildGame”
+      “-username $(unityusername)”,
+      “-password $(unitypassword)”
+      )
